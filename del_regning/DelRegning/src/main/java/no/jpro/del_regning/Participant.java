@@ -1,4 +1,4 @@
-package no.bs.sb;
+package no.jpro.del_regning;
 
 public class Participant {
     Long id;
