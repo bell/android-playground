@@ -4,6 +4,7 @@ import java.util.Locale;
 
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -17,9 +18,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends FragmentActivity implements ActionBar.TabListener {
+    public final static String EXTRA_MESSAGE = "no.jpro.del_regning.MESSAGE";
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -163,6 +166,15 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
             dummyTextView.setText(Integer.toString(getArguments().getInt(ARG_SECTION_NUMBER)));
             return rootView;
         }
+    }
+
+    public void sendMessage(View view) {
+        System.out.println("sendMessage called from view " + view);
+        Intent intent = new Intent(this, DisplayMessageActivity.class);
+        EditText editText = (EditText) view.findViewById(R.id.edit_message);
+        String message = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
     }
 
 }

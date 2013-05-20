@@ -2,8 +2,7 @@ package no.jpro.del_regning;
 
 import java.math.BigDecimal;
 
-public class BillItem {
-    Participant consumer;
+public class Payment {
+    Participant payee;
     BigDecimal amount;
-    String description;
 }

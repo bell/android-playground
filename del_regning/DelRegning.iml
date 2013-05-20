@@ -51,6 +51,7 @@
       <sourceFolder url="file://$MODULE_DIR$/DelRegning/src/instrumentTest/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/DelRegning/src/instrumentTest/res" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/DelRegning/src/instrumentTest/resources" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/DelRegning/src/main/test" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/DelRegning/build/apk" />
       <excludeFolder url="file://$MODULE_DIR$/DelRegning/build/assets" />
       <excludeFolder url="file://$MODULE_DIR$/DelRegning/build/bundles" />
